@@ -57,14 +57,15 @@ public class TestMain {
 
         // issue the Get request
         TestMain example = new TestMain();
-        String getResponse = example.doGetRequest("http://www.vogella.com");
+//        String getResponse = example.doGetRequest("http://www.vogella.com");
+        String getResponse = example.doGetRequest("http://www.google.com.ua");
         System.out.println(getResponse);
 
 
         // issue the post request
 
-        String json = example.bowlingJson("Jesse", "Jake");
+   /*     String json = example.bowlingJson("Jesse", "Jake");
         String postResponse = example.doPostRequest("http://www.roundsapp.com/post", json);
-        System.out.println(postResponse);
+        System.out.println(postResponse);*/
     }
 }
