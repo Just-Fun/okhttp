@@ -1,4 +1,4 @@
-package ua.com.serzh;
+package ua.com.serzh.okhttp3;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

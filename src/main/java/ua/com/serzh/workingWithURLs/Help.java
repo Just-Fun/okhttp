@@ -1,4 +1,4 @@
-package ua.com.serzh;
+package ua.com.serzh.workingWithURLs;
 
 /**
  * Created by Serzh on 11/18/16.
@@ -40,7 +40,7 @@ public class Help {
     To make these characters legal they need to be encoded before passing them to the URL constructor.
 
     URL url = new URL("http://example.com/hello%20world");
-    Encoding the special character(s) in this example is easy as there is only one character that needs encoding, but for URL addresses that have several of these characters or if you are unsure when writing your code what URL addresses you will need to access, you can use the multi-argument constructors of the java.net.URI class to automatically take care of the encoding for you.
+    Encoding the special character(url) in this example is easy as there is only one character that needs encoding, but for URL addresses that have several of these characters or if you are unsure when writing your code what URL addresses you will need to access, you can use the multi-argument constructors of the java.net.URI class to automatically take care of the encoding for you.
 
     URI uri = new URI("http", "example.com", "/hello world/", "");
     And then convert the URI to a URL.

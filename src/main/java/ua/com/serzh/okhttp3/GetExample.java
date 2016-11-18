@@ -1,4 +1,4 @@
-package ua.com.serzh;
+package ua.com.serzh.okhttp3;
 
 
 import java.io.IOException;
@@ -24,7 +24,6 @@ public class GetExample {
         Request request = new Request.Builder()
                 .url(url)
                 .build();
-
 
 //        You can also add authentication headers
 

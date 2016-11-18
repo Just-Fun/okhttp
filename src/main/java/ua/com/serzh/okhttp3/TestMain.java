@@ -1,4 +1,4 @@
-package ua.com.serzh;
+package ua.com.serzh.okhttp3;
 
 import okhttp3.*;
 
@@ -15,6 +15,20 @@ import com.squareup.okhttp.Response;*/
  */
 public class TestMain {
     OkHttpClient client = new OkHttpClient();
+
+    public static void main(String[] args) throws IOException {
+        // issue the Get request
+        TestMain example = new TestMain();
+//        String getResponse = example.doGetRequest("http://www.vogella.com");
+        String getResponse = example.doGetRequest("http://www.google.com.ua");
+        System.out.println(getResponse);
+
+        // issue the post request
+
+        String json = example.bowlingJson("Jesse", "Jake");
+        String postResponse = example.doPostRequest("http://www.roundsapp.com/post", json);
+        System.out.println(postResponse);
+    }
 
     // code request code here
     String doGetRequest(String url) throws IOException {
@@ -51,21 +65,5 @@ public class TestMain {
                 .build();
         Response response = client.newCall(request).execute();
         return response.body().string();
-    }
-
-    public static void main(String[] args) throws IOException {
-
-        // issue the Get request
-        TestMain example = new TestMain();
-//        String getResponse = example.doGetRequest("http://www.vogella.com");
-        String getResponse = example.doGetRequest("http://www.google.com.ua");
-        System.out.println(getResponse);
-
-
-        // issue the post request
-
-   /*     String json = example.bowlingJson("Jesse", "Jake");
-        String postResponse = example.doPostRequest("http://www.roundsapp.com/post", json);
-        System.out.println(postResponse);*/
     }
 }

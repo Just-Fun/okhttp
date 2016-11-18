@@ -1,4 +1,4 @@
-package ua.com.serzh;
+package ua.com.serzh.workingWithURLs;
 
 import java.net.*;
 //import java.io.*;
@@ -7,7 +7,7 @@ import java.net.*;
  */
 
 public class ParseURL {
-    public static void main(String[] args) throws Exception {
+    /*public static void main(String[] args) throws Exception {
 
         URL aURL = new URL("http://example.com:80/docs/books/tutorial"
                 + "/index.html?name=networking#DOWNLOADING");
@@ -21,7 +21,7 @@ public class ParseURL {
         System.out.println("filename = " + aURL.getFile());
         System.out.println("ref = " + aURL.getRef());
     }
-    /*
+    *//*
     protocol = http
     authority = example.com:80
     host = example.com
